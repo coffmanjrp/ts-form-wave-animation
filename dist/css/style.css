@@ -88,7 +88,6 @@ body {
   border-bottom: 2px solid #fff;
   font-style: 1.125rem;
   color: #fff;
-  z-index: 10;
 }
 
 .form-control input:focus, .form-control input:valid {
