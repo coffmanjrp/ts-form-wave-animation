@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: steelblue;
+  font-family: 'Mulish', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.container h1 {
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+
+.container a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9375rem;
+  width: 100%;
+  background: lightblue;
+  border: 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.text {
+  margin-top: 1.875rem;
+}
+
+.form-control {
+  position: relative;
+  margin: 1.25rem 0;
+  width: 18.75rem;
+}
+
+.form-control input {
+  display: block;
+  padding: 0.9375rem 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-style: 1.125rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.form-control input:focus, .form-control input:valid {
+  border-bottom-color: lightblue;
+  outline: 0;
+}
+
+.form-control input:focus + label span, .form-control input:valid + label span {
+  color: lightblue;
+  -webkit-transform: translateY(-1.875rem);
+          transform: translateY(-1.875rem);
+}
+
+.form-control label {
+  position: absolute;
+  top: 0.9375rem;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  min-width: 0.3125rem;
+  font-size: 1.125rem;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
