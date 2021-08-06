@@ -1,6 +1,8 @@
 const labels = document.querySelectorAll('.form-control label');
 
-labels.forEach((label) => {
+labels.forEach((item) => {
+  const label = item;
+
   label.innerHTML = (label as HTMLElement).innerText
     .split('')
     .map(
