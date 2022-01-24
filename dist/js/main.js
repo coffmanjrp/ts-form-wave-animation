@@ -5,7 +5,7 @@ labels.forEach(function (item) {
     label.innerHTML = label.innerText
         .split('')
         .map(function (letter, index) {
-        return "<span style=\"transition-delay:" + index * 50 + "ms\">" + letter + "</span>";
+        return "<span style=\"transition-delay:".concat(index * 50, "ms\">").concat(letter, "</span>");
     })
         .join('');
 });

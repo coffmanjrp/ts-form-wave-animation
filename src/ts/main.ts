@@ -3,7 +3,7 @@ const labels = document.querySelectorAll('.form-control label');
 labels.forEach((item) => {
   const label = item;
 
-  label.innerHTML = (label as HTMLElement).innerText
+  label.innerHTML = (label as HTMLLabelElement).innerText
     .split('')
     .map(
       (letter: string, index: number) =>
